@@ -182,6 +182,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     message.toLowerCase().includes('depressed') ||
     message.toLowerCase().includes('depression') ||
     message.toLowerCase().includes('lonely') ||
+    message.toLowerCase().includes('cry') ||
     message.toLowerCase().includes('unmotivated') ||
     message.toLowerCase().includes('moody') ||
     message.toLowerCase().includes('tired')
@@ -217,7 +218,9 @@ message.toLowerCase().includes('local')) {
   } 
   
   if ( (message.toLowerCase().includes('coping') ||
-  message.toLowerCase().includes('cope') ||  message.toLowerCase().includes('strategies') ||  message.toLowerCase().includes('practices') ||
+  message.toLowerCase().includes('cope') ||  
+        message.toLowerCase().includes('strategies') ||  
+        message.toLowerCase().includes('practices') ||
   message.toLowerCase().includes('self-care'))
 ) {
   const careWords = [
@@ -248,12 +251,11 @@ if (message.toLowerCase().includes('encourage')) {
 }
 
 if (
-  message.toLowerCase().includes('support') || //&& 
+  message.toLowerCase().includes('support') || //&& //&& means and
   (
     message.toLowerCase().includes('parent') ||
     message.toLowerCase().includes('teen') ||
     message.toLowerCase().includes('mom') ||
-  
    message.toLowerCase().includes('dad') || 
     message.toLowerCase().includes('child') ||
     message.toLowerCase().includes('partner') ||
