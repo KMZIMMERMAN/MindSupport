@@ -208,12 +208,12 @@ message.toLowerCase().includes('local')) {
   } 
   
   if (message.toLowerCase().includes('search')) {
-    reply = 'You can use this website to help you look for local mental health providers: insert link here';
-  } 
+  reply = 'You can use these websites to help you look for local mental health care providers: <br><a href="https://www.zocdoc.com/" target="_blank">ZocDoc</a><br><a href="https://www.anthem.com/find-care/" target="_blank">Anthem</a><br><a href="https://findtreatment.gov/" target="_blank">SAMHSA Treatment Facility Finder</a><br><a href="https://www.psychologytoday.com/us/therapists" target="_blank">PsychologyToday</a>';
+}
   
   if (message.toLowerCase().includes('insurance')) {
-    reply = 'You can use this website to help you find out more about your current health insurance coverage, copay and more: insert link here';
-  } 
+  reply = 'You can use this website to help you find out more about your current health insurance coverage, copay and more: <br><a href="https://www.healthcare.gov/health-care-law-protections/summary-of-benefits-and-coverage/" target="_blank">HealthCare.gov: Benefits & Coverage Summary</a><br><a href="https://www.cms.gov/CCIIO/Resources/Forms-Reports-and-Other-Resources/Downloads/Uniform-Glossary-01-2020.pdf" target="_blank">Health Coverage & Medical Term Glossary</a><br><a href="https://www.metlife.com/stories/benefits/insurance-card/" target="_blank">How to Read Insurance Card</a><br><a href="https://www.cigna.com/knowledge-center/copays-deductibles-coinsurance" target="_blank">Copays, Deductibles, & Coinsurance Explained</a>';
+}
   
   if (message.toLowerCase().includes('IDK')) {
     reply = 'You can use this website to _____: insert link here';
