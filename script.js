@@ -163,6 +163,8 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     reply = 'Hello! How can I assist you today?';
   } else if (message.toLowerCase().includes('help')) {
     reply = 'Sure, I\'d be happy to help! I offer a variety of features to support you, try saying: "talk", "provider", or "support" to get started!' ;
+  } else if (message.toLowerCase().includes('thank')) { 
+     reply = 'You\'re very welcome! What else can I help you with today?';
   } else if (message.toLowerCase().includes('talk')) {
     reply = 'I\'d be happy to talk to you! What do you want to talk about?';
   } else if (message.toLowerCase().includes('resources')) {
