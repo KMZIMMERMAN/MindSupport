@@ -215,7 +215,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
 }
   
   if (message.toLowerCase().includes('insurance')) {
-  reply = 'You can use this website to help you find out more about your current health insurance coverage, copay and more: <br><a href="https://www.healthcare.gov/health-care-law-protections/summary-of-benefits-and-coverage/" target="_blank">HealthCare.gov: Benefits & Coverage Summary</a><br><a href="https://www.cms.gov/CCIIO/Resources/Forms-Reports-and-Other-Resources/Downloads/Uniform-Glossary-01-2020.pdf" target="_blank">Health Coverage & Medical Term Glossary</a><br><a href="https://www.metlife.com/stories/benefits/insurance-card/" target="_blank">How to Read Insurance Card</a><br><a href="https://www.cigna.com/knowledge-center/copays-deductibles-coinsurance" target="_blank">Copays, Deductibles, & Coinsurance Explained</a>';
+  reply = 'You can use these websites to help you find out more about your current health insurance coverage, copay and more: <br><a href="https://www.healthcare.gov/health-care-law-protections/summary-of-benefits-and-coverage/" target="_blank">HealthCare.gov: Benefits & Coverage Summary</a><br><a href="https://www.cms.gov/CCIIO/Resources/Forms-Reports-and-Other-Resources/Downloads/Uniform-Glossary-01-2020.pdf" target="_blank">Health Coverage & Medical Term Glossary</a><br><a href="https://www.metlife.com/stories/benefits/insurance-card/" target="_blank">How to Read Insurance Card</a><br><a href="https://www.cigna.com/knowledge-center/copays-deductibles-coinsurance" target="_blank">Copays, Deductibles, & Coinsurance Explained</a>';
 }
   
   if (message.toLowerCase().includes('IDK')) {
