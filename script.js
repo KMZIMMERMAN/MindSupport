@@ -178,9 +178,16 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     message.toLowerCase().includes('edge') ||
     message.toLowerCase().includes('fear') ||
     message.toLowerCase().includes('fast') ||
+    message.toLowerCase().includes('restless') ||
+    message.toLowerCase().includes('worry') ||
+    message.toLowerCase().includes('worried') ||
+    message.toLowerCase().includes('trembling') ||
+    message.toLowerCase().includes('tense') ||
+    message.toLowerCase().includes('ache') ||
+    message.toLowerCase().includes('sweat') ||
     message.toLowerCase().includes('panic')
   ) {
-    reply = 'I\'m very sorry to hear that you\'re feeling anxious. Would you like to receive some coping strategies or self-care practices, words of encouragement, or talk about something else?';
+    reply = 'I\'m very sorry to hear that you\'re feeling anxious. Would you like to receive some coping strategies or self-care practices, words of encouragement, or talk about something else?<br><i>Additional resources:<br><i><a href="https://warmline.org/warmdir.html" target="_blank">Warmline Directory</a>';
   } else if (
     message.toLowerCase().includes('sad') ||
     message.toLowerCase().includes('depressed') ||
@@ -189,12 +196,21 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     message.toLowerCase().includes('cry') ||
     message.toLowerCase().includes('unmotivated') ||
     message.toLowerCase().includes('moody') ||
+    message.toLowerCase().includes('isolation') ||
+    message.toLowerCase().includes('hopeless') ||
+    message.toLowerCase().includes('guilt') ||
+    message.toLowerCase().includes('low') ||
     message.toLowerCase().includes('tired')
   ) {
-    reply = 'I\'m very sorry to hear that you\'re feeling depressed. Would you like to receive some coping strategies or self-care practices, words of encouragement, or talk about something else?';
+    reply = 'I\'m very sorry to hear that you\'re feeling depressed. Would you like to receive some coping strategies or self-care practices, words of encouragement, or talk about something else? <br><i>Additional resources:<br><a href="https://warmline.org/warmdir.html" target="_blank">Warmline Directory</a>';
   } else if (
     message.toLowerCase().includes('kill') ||
     message.toLowerCase().includes('die') ||
+    message.toLowerCase().includes('harm') ||
+    message.toLowerCase().includes('crisis') ||
+    message.toLowerCase().includes('distress') ||
+    message.toLowerCase().includes('line') ||
+    message.toLowerCase().includes('worthless') ||
     message.toLowerCase().includes('suicide') ||
     message.toLowerCase().includes('suicidal')
   ) {
@@ -255,7 +271,9 @@ if (message.toLowerCase().includes('encourage')) {
 reply = `Okay! Here are some words of encouragement:<br><br>${positiveWords[randomIndex]}`;
 }
 
-if (
+if (message.toLowerCase() === 'mindsupport') {
+  reply = 'Hello! How can I assist you today?';
+} else if (
   message.toLowerCase().includes('support') || //&& //&& means and
   (
     message.toLowerCase().includes('parent') ||
