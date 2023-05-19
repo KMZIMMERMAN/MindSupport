@@ -197,6 +197,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     message.toLowerCase().includes('unmotivated') ||
     message.toLowerCase().includes('moody') ||
     message.toLowerCase().includes('isolation') ||
+    message.toLowerCase().includes('isolated') ||
     message.toLowerCase().includes('hopeless') ||
     message.toLowerCase().includes('guilt') ||
     message.toLowerCase().includes('low') ||
