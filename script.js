@@ -203,11 +203,12 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     reply = 'Thank you for your message! Unfortunately, I am unable to respond—could you please try saying something else?';
   }
 
-  if (message.toLowerCase().includes('provider')
-     ||
-message.toLowerCase().includes('local')) {
-    reply = 'I\'d be happy to help you find a an mental health provider! If you would like to search for providers in your area, please reply with "search". If you would like to learn more about your health insurance coverage, please please reply with "insurance". If you would like to ____, please reply with "IDK".';
-  } 
+   if (message.toLowerCase().includes('provider') || message.toLowerCase().includes('local')) {
+  reply = 'I\'d be happy to help you find a mental health provider!<br><br>'
+    + 'If you would like to search for providers in your area, please reply with "search".<br>'
+    + 'If you would like to learn more about your health insurance coverage, please reply with "insurance".<br>'
+    + 'If you would like to ____, please reply with "IDK".';
+}
   
   if (message.toLowerCase().includes('search')) {
   reply = 'You can use these websites to help you look for local mental health care providers: <br><a href="https://www.zocdoc.com/" target="_blank">ZocDoc</a><br><a href="https://www.anthem.com/find-care/" target="_blank">Anthem</a><br><a href="https://findtreatment.gov/" target="_blank">SAMHSA Treatment Facility Finder</a><br><a href="https://www.psychologytoday.com/us/therapists" target="_blank">PsychologyToday</a>';
@@ -237,7 +238,7 @@ message.toLowerCase().includes('local')) {
     'Limit exposure to stressors: Identify sources of stress in your life and explore ways to reduce or manage them. This might involve setting boundaries with work, reducing exposure to triggers, or seeking support to address specific stressors.'
   ];
   const randomIndex = Math.floor(Math.random() * careWords.length);
-  reply = `Sure, here is a coping strategy or self-care practice you can try: ${careWords[randomIndex]}`;
+  reply = `Sure, here is a coping strategy or self-care practice you can try:<br><br>${careWords[randomIndex]}`;
 }
 
 if (message.toLowerCase().includes('encourage')) {
@@ -251,7 +252,7 @@ if (message.toLowerCase().includes('encourage')) {
     'You are worth fighting for. Your life has inherent value, and there are people who love and care about you. Even if it feels difficult right now, hold on to the belief that you are worthy of a happier and healthier life. Keep fighting, and don\'t give up on yourself.'
   ];
   const randomIndex = Math.floor(Math.random() * positiveWords.length);
-  reply = `Okay! Here are some words of encouragement: ${positiveWords[randomIndex]}`;
+  reply = `Okay! Here are some words of encouragement:<br><br>${positiveWords[randomIndex]}`;
 }
 
 if (
@@ -275,7 +276,7 @@ if (
 ) {
   const supportiveWords = ['Be present and listen: Create a safe and non-judgmental space for your loved one to express their feelings and thoughts. Be an attentive listener without interrupting or trying to offer immediate solutions. Sometimes, lending a compassionate ear can make a significant difference.','Educate yourself: Learn about the mental health condition your loved one is experiencing. This can help you understand their challenges better and offer informed support. Read reliable sources, attend support groups, or consult with mental health professionals for guidance.','Validate their experiences: Acknowledge and validate your loved one/s feelings. Let them know that their experiences are real and valid. Avoid dismissing or minimizing their struggles. Show empathy and understanding, even if you may not fully comprehend their situation.','Offer practical help: Help your loved one with practical tasks they may find overwhelming. This could involve assisting with household chores, running errands, or accompanying them to appointments. Offering concrete support can alleviate some of their stress and make them feel cared for.','Encourage professional help: Suggest seeking professional support and encourage your loved one to reach out to a mental health professional. Offer assistance in finding suitable resources, such as therapists, counselors, or support groups. Recognize that professional help can provide specialized care.','Be patient and understanding: Recovery takes time, and there may be ups and downs along the way. Practice patience and understanding. Avoid putting pressure on your loved one to "get better" quickly. Offer consistent support and let them know you/re there for them, regardless of their progress.','Maintain open communication: Foster open and honest communication with your loved one. Encourage them to share their thoughts, concerns, and needs. Regularly check in with them and let them know they can approach you anytime they need to talk.','Avoid judgment and stigma: Create a safe and non-stigmatizing environment for your loved one. Avoid labeling or judging them based on their mental health condition. Foster a supportive atmosphere where they feel accepted and understood.','Celebrate small victories: Acknowledge and celebrate the progress your loved one makes, no matter how small. Encouragement and positive reinforcement can inspire hope and motivate them to continue their journey towards better mental health.'];
   const randomIndex = Math.floor(Math.random() * supportiveWords.length);
-  reply = `Supporting a loved one who is struggling with their mental health is crucial. Here is one way you can provide support: ${supportiveWords[randomIndex]}`;
+  reply = `Supporting a loved one who is struggling with their mental health is crucial. Here is one way you can provide support:<br><br>${supportiveWords[randomIndex]}`;
 }
   
   let chatboxReply = `
