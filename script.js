@@ -224,7 +224,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
   reply = 'I\'d be happy to help you find a mental health provider!<br><br>'
     + 'If you would like to search for providers in your area, please reply with "search".<br>'
     + 'If you would like to learn more about your health insurance coverage, please reply with "insurance".<br>'
-    + 'If you would like to ____, please reply with "IDK".';
+    + 'If you would like specific instructions on how you can go about finding a provider who takes your insurance, please reply with "instruction".';
 }
   
   if (message.toLowerCase().includes('search')) {
@@ -235,8 +235,8 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
   reply = 'You can use these websites to help you find out more about your current health insurance coverage, copay and more: <br><a href="https://www.healthcare.gov/health-care-law-protections/summary-of-benefits-and-coverage/" target="_blank">HealthCare.gov: Benefits & Coverage Summary</a><br><a href="https://www.cms.gov/CCIIO/Resources/Forms-Reports-and-Other-Resources/Downloads/Uniform-Glossary-01-2020.pdf" target="_blank">Health Coverage & Medical Term Glossary</a><br><a href="https://www.metlife.com/stories/benefits/insurance-card/" target="_blank">How to Read Insurance Card</a><br><a href="https://www.cigna.com/knowledge-center/copays-deductibles-coinsurance" target="_blank">Copays, Deductibles, & Coinsurance Explained</a>';
 }
   
-  if (message.toLowerCase().includes('IDK')) {
-    reply = 'You can use this website to _____: insert link here';
+  if (message.toLowerCase().includes('instruction')) {
+    reply = 'I am currently working on this feature! Try again later!';
   } 
   
   if ( (message.toLowerCase().includes('coping') ||
