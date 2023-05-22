@@ -190,8 +190,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     reply = 'I\'m very sorry to hear that you\'re feeling anxious. Would you like to receive some coping strategies or self-care practices, words of encouragement, or talk about something else?<br><i>Additional resources:<br><i><a href="https://warmline.org/warmdir.html" target="_blank">Warmline Directory</a>';
   } else if (
     message.toLowerCase().includes('sad') ||
-    message.toLowerCase().includes('depressed') ||
-    message.toLowerCase().includes('depression') ||
+    message.toLowerCase().includes('depress') ||
     message.toLowerCase().includes('lonely') ||
     message.toLowerCase().includes('cry') ||
     message.toLowerCase().includes('unmotivated') ||
