@@ -218,12 +218,8 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
   } else {
     reply = 'Thank you for your message! Unfortunately, I am unable to respond—could you please try saying something else?';
   }
-   if (message.toLowerCase().includes('learn')) {
-  reply = 'I\'d be happy to help you learn more about psychological disorders!<br><br>' 
-  + 'Try saying "I\'d like to learn about anxiety" or swap the word "anxiety" with another psychological disorder!<br><br>'
-  + '<i>keyword(s): "learn"</i>'; }
-  
-  else if (message.toLowerCase().includes('depress') && message.toLowerCase().includes('learn')) {
+   
+  if (message.toLowerCase().includes('depress') && message.toLowerCase().includes('learn')) {
   reply = 'I\'d be happy to help you learn more about Depressive disorders!<br><br>'
      + '<i>Depressive disorders are characterized by the presence of sad, empty, or irritable moods accompanied by physical and cognitive symptoms. They also differ in terms of duration, timing, and causes.</i><br><br>'
     + '<b>General symptoms of depressive disorders may include:</b> Feelings of helplessness and hopelessness, Loss of interest in daily activities, Appetite or weight changes, Sleep changes, Anger or irritability, Loss of energy, Self-loathing, Reckless behavior, Concentration problems, & Unexplained aches and pains. <i><a href="https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007" target="_blank">More</i></a><br><br>'
@@ -326,7 +322,11 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     + '<b>Find or learn more information about Substance-related disorders:</b><i><br><a href="https://www.youtube.com/watch?v=Hgn7MJjMfkk" target="_blank">Youtube Video</a><br><a href="https://www.psychiatry.org/patients-families/addiction-substance-use-disorders/what-is-a-substance-use-disorder" target="_blank">What Is a Substance Use Disorder? - APA</a><br><a href="https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Substance-Use-Disorders" target="_blank">Substance Use Disorders - NAMI</a></i><br><br>'
     + '<b>Learn how to support someone with ASD:</b><i><br><a href="https://www.samhsa.gov/find-support" target="_blank">Find Support - SAMHSA</a><br><a href="https://www.healthline.com/health/living-with-an-addict" target="_blank">How to Cope When Someone in Your Household Lives with Addiction - Healthline</a><br><a href="https://drugabuse.com/treatment/how-to-help-a-drug-addict/" target="_blank">Ways of Helping Someone With Drug or Alcohol Addiction - AAC</a><br><a href="https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/intervention/art-20047451" target="_blank">Intervention: Help a loved one overcome addiction - Mayo Clinic</a></i>';
 }
-
+else if (message.toLowerCase().includes('learn')) {
+  reply = 'I\'d be happy to help you learn more about psychological disorders!<br><br>' 
+  + 'Try saying "I\'d like to learn about anxiety" or swap the word "anxiety" with another psychological disorder!<br><br>'
+  + '<i>keyword(s): "learn"</i>'; }
+   
    if (message.toLowerCase().includes('provider') || message.toLowerCase().includes('local')) {
   reply = 'I\'d be happy to help you find a mental health provider!<br><br>'
     + 'If you would like to search for providers in your area, please reply with "search".<br>'
