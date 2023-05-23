@@ -182,6 +182,7 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     message.toLowerCase().includes('worry') ||
     message.toLowerCase().includes('worried') ||
     message.toLowerCase().includes('trembling') ||
+    message.toLowerCase().includes('overwhelm') ||
     message.toLowerCase().includes('tense') ||
     message.toLowerCase().includes('ache') ||
     message.toLowerCase().includes('sweat') ||
