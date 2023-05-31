@@ -309,6 +309,14 @@ if (message.toLowerCase().includes('hello')|| message.toLowerCase().includes('hi
     + '<b>Find or learn more information about ASD:</b><i><br><a href="https://www.youtube.com/watch?v=FCejya1WWC8" target="_blank">Youtube Video</a><br><a href="https://www.psychiatry.org/patients-families/autism/what-is-autism-spectrum-disorder" target="_blank">What is ASD? - APA</a><br><a href="https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd" target="_blank">ASD - NIMH </a></i><br><br>'
     + '<b>Learn how to support someone with ASD:</b><i><br><a href="https://www.poac.net/resources/fact-sheets/" target="_blank">ASD Fact Sheets - POAC</a><br><a href="https://www.milestones.org/get-started/for-community-at-large/interacting-with-autistic-people" target="_blank">Best Communication Practices for Interacting with Autistic People - Milestones</a><br><a href="https://psyche.co/guides/how-to-be-a-good-friend-to-an-autistic-person" target="_blank">How to be a good friend to an Autistic person - Psyche</a><br><a href="https://thespectrum.org.au/autism-strategy/autism-strategy-communication/" target="_blank">Autism communication strategies - The Spectrum</a></i>';
 }
+  else if (message.toLowerCase().includes('stigma') && message.toLowerCase().includes('learn')) {
+  reply = 'I\'d be happy to help you learn more learn more about the implications of stigma related to mental health and mental illness!<br><br>'
+    + 'The stigma surrounding mental health and mental illness has wide-ranging implications that impact individuals, families, and society. It leads to delayed or avoided help-seeking, social isolation, and alienation, as well as challenges in employment and education. Stigma strains relationships, reduces treatment adherence, and contributes to a public health and economic burden. Missed opportunities for education and awareness further perpetuate the problem.<br><br>'
+     + 'Addressing mental health stigma requires collective efforts to promote education, empathy, and open conversations, fostering a supportive environment for those with mental health conditions to receive the care and support they need.<br><br>'
+    + 'Open conversations about mental health can help reduce stigma and ensure that individuals with mental health conditions receive the care, compassion, and opportunities they deserve. By working together, we can create a society that values mental health and supports those who are affected by mental illness.<br><br>'
+    + '<b>Learn more about stigma:</b><i><br><a href="https://www.youtube.com/watch?v=U1DgYCi9lDI" target="_blank">Mental Health Stigma (Youtube)</a><br><a href="https://www.psychiatry.org/patients-families/stigma-and-discrimination" target="_blank">Stigma, Prejudice & Discrimination Against People with Mental Illness - APA</a></i>';
+
+ }
  else if (
   (message.toLowerCase().includes('addict') ||
   message.toLowerCase().includes('substance') ||
